@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+    <%# this is a comment %>
+    <h1 style="text-align: center;"><%= msg1 %></h1>
+    <h1 style="text-align: center;"><%= msg2 %></h1>
+    <h1 style="text-align: center;"><%= validated %></h1>
+    <%- pic %>
+
+    <hr>
+
+    <% for(let i = 0; i <= 5; i++) { %>
+    <h2>Rendering in EJS template engine</h2>
+    <% } %>
+
+    <hr>
+
+    <% for(let i = 0; i <= 5; i++) { %>
+    <h3><%= i %></h3>
+    <% } %>
+
+    <hr>
+
+    <% for(let i = 0; i <= 9; i++) { %>
+    <% if(i % 2 === 0) { 
+            result = 'even';
+           } else {
+               result = 'odd';
+           } %>
+    <h4><%= i %> -> <%= result %></h4>
+    <% } %>
+</body>
+
+</html>

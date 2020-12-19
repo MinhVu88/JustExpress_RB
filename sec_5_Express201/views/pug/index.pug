@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    title Pug Template Engine
+    //- script(src='https://code.jquery.com/jquery.js')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    h1 #{msg1}
+    
+    div
+      p 1st paragraph
+      p #{validated}
+    
+    div.container 
+      div.row 
+       div.col-sm-3 #{msg2} ->
+       div.col-sm-3 Name: #{user.name} | Age: #{user.age}
+       div.col-sm-12 !{pic}
+      div.row 
+        ul.col-sm-12
+          each member in members
+            li= 'Name: ' + member.name + ' | Age: ' + member.age
+            if member.active
+              div.active -> An active Tool member
+
+    div  3 + 4 = #{3 + 4}
+      

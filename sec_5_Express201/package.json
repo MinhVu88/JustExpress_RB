@@ -1,0 +1,19 @@
+{
+  "name": "sec_5_Express201",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressServer.js",
+  "scripts": {
+    "dev": "nodemon pug.js -e js,hbs,ejs,pug,html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "helmet": "^4.1.0",
+    "pug": "^3.0.0"
+  }
+}
